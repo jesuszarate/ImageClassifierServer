@@ -14,8 +14,8 @@ from whitenoise.django import DjangoWhiteNoise
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 
-from dj_static import Cling
+import django.core.handler.wsgi
+application = django.core.handlers.wsgi.WSGIHandler()
 
-application = Cling(get_wsgi_application())
-#application = get_wsgi_application()
+application = get_wsgi_application()
 application = DjangoWhiteNoise(application)
