@@ -15,7 +15,7 @@ import os
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 
-import django.core.handler.wsgi
+#import django.core.handler.wsgi
 
 from whitenoise.django import DjangoWhiteNoise
 
