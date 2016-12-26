@@ -1,0 +1,47 @@
+{% extends "../../header.html" %}
+{% block content %}
+
+{% load staticfiles %}
+
+<hr><hr>
+<div class="container">
+    <div class="container-fluid">
+
+        <center>
+            <img src="{% static 'img/Greg.jpg' %}"
+                 name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+
+
+            <h3 class="media-heading">Jesus Zarate</h3>
+
+            <h3><small>Computer Science</small></h3>
+
+            {% include "members/greg/includes/social-media.html" %}
+
+
+            <span><strong>Skills: </strong></span>
+            <span class="label label-warning">HTML5/CSS</span>
+            <span class="label label-info">Adobe CS 5.5</span>
+            <span class="label label-info">Microsoft Office</span>
+            <span class="label label-success">Windows XP, Vista, 7</span>
+        </center>
+        <hr>
+        <center>
+            <p class="text-left"><strong>Bio: </strong><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a,
+                vulputate vel tellus.</p>
+            <br>
+        </center>
+
+
+        <!--<center>-->
+            <!--<button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe-->
+            <!--</button>-->
+        <!--</center>-->
+
+    </div>
+
+    <!--</div>-->
+</div>
+
+{% endblock %}

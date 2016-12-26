@@ -1,0 +1,26 @@
+{% block content %}
+{% load staticfiles %}
+
+<div class="row">
+    <div class="col-lg-3">
+        <img class="img-circle" src="{% static 'img/Greg.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+        <h2>Greg Anderson</h2>
+        <p><a class="btn btn-default" href="/team/greg" role="button">View Profile &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-3">
+        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+        <h2>Lance Petersen</h2>
+        <p><a class="btn btn-default" href="/team/lance" role="button">View Profile &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-3">
+        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+        <h2>Yu Song</h2>
+        <p><a class="btn btn-default" href="/team/yu" role="button">View Profile &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-3">
+        <img class="img-circle" src="{% static "img/profile.jpg" %}" alt="Generic placeholder image" width="140" height="140">
+        <h2>Jesus Zarate</h2>
+        <p><a class="btn btn-default" href="/team/jesus" role="button">View Profile &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+</div>
+{% endblock %}
