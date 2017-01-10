@@ -36,7 +36,7 @@ else:
 SECRET_KEY = os.environ['SECRET_KEY']
 
 
-ALLOWED_HOSTS = ['limitless-escarpment-31176.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['jarvis-sp.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
