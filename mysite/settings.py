@@ -24,14 +24,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 import os
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-DEBUG = False
+DEBUG = True
+#DEBUG = False
 
+'''
 if DEBUG:
     with open('../secret.txt') as f:
         SECRET_KEY = f.read().strip()
 else:
-    SECRET_KEY = os.environ['SECRET_KEY']
+'''
+SECRET_KEY = os.environ['SECRET_KEY']
 
 
 ALLOWED_HOSTS = ['limitless-escarpment-31176.herokuapp.com', '127.0.0.1']
