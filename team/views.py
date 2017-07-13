@@ -1,22 +1,8 @@
 from django import forms
 from django.db import models
-#from django.forms import models
 from django.shortcuts import render, HttpResponse
 import json
 
-# from mysite.personal import models
-# from django.http import JsonResponse
-
-# Create your views here.
-#from mysite.team.ImageUploadForm import ImageUploadForm
-#from mysite.team.ExampleModel import ExampleModel
-#from mysite.team.ImageUploadForm import UploadFileForm
-
-import sys
-print('*'*50)
-#print(sys.path.append('..'))
-print('*'*50)
-#sys.path.append('../Classify)
 from .Classifier.classify_image import classify
 
 
@@ -63,7 +49,8 @@ class UploadFileForm(forms.Form):
 
 
 def handle_uploaded_file(f):
-    with open('Classifier/images/name.jpg', 'wb+') as destination:
+    #/Users/jesuszarate/GitHub/DjangoTutorial/mysite/team/Classifier/images
+    with open('./team/Classifier/images/name.jpg', 'wb+') as destination:
         for chunk in f.chunks():
             destination.write(chunk)
 
