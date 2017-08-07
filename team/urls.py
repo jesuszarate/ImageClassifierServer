@@ -8,4 +8,7 @@ urlpatterns = [
     url(r'^greg', views.greg, name='greg'),
     url(r'^yu', views.yu, name='yu'),
     url(r'^lance', views.lance, name='lance'),
+    url(r'^upload_picture', views.uploadPicture, name='uploadPicture'),
+    url(r'^pp', views.upload_pic, name='pp'),
+    url(r'^jj', views.jj, name='jj'),
 ]
