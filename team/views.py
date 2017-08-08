@@ -14,6 +14,7 @@ import json
 
 import sys
 sys.path.append('/Users/jesuszarate/GitHub/DjangoTutorial/mysite/Classifier')
+sys.path.append('..')
 from classify_image import classify
 
 
