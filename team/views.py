@@ -42,7 +42,7 @@ def jj(request):
     d = {}
     d['jj'] = 'arteaga'
     data = json.dumps(d)
-    import pdb;pdb.set_trace()
+    #import pdb;pdb.set_trace()
     return HttpResponse(data, content_type='application/json')
 
     #return JsonResponse(data)
@@ -61,7 +61,6 @@ class UploadFileForm(forms.Form):
     file  = forms.FileField()
 
 def handle_uploaded_file(f):
-    import pdb; pdb.set_trace()
     with open('Classifier/images/name.jpg', 'wb+') as destination:
         for chunk in f.chunks():
             destination.write(chunk)
@@ -73,9 +72,11 @@ def upload_pic(request):
         form = UploadFileForm(request.POST or None, request.FILES or None)
         #if form.is_valid():
         handle_uploaded_file(request.FILES['image'])
-        #print (classify('name'))
-        classify("name")
-        return HttpResponse('success')
+        scores = classify("name")
+        data = json.dumps(scores)
+        return HttpResponse(data)
+        #return HttpResponse(data, content_type='application/json')
+
         #return HttpResponse('upload.html')
     else:
         form = UploadFileForm()
