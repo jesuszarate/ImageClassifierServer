@@ -13,7 +13,6 @@ import json
 #from mysite.team.ImageUploadForm import UploadFileForm
 
 import sys
-sys.path.append('/Users/jesuszarate/GitHub/DjangoTutorial/mysite/Classifier')
 sys.path.append('..')
 from classify_image import classify
 
