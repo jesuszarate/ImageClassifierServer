@@ -17,7 +17,7 @@ print('*'*50)
 #print(sys.path.append('..'))
 print('*'*50)
 #sys.path.append('../Classify)
-from Classifier.classify_image import classify
+from .Classifier.classify_image import classify
 
 
 def team(request):
