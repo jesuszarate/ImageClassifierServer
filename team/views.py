@@ -45,23 +45,22 @@ def jj(request):
     d = {}
     d['jj'] = 'arteaga'
     data = json.dumps(d)
-    #import pdb;pdb.set_trace()
     return HttpResponse(data, content_type='application/json')
-
-    #return JsonResponse(data)
-
 
 
 class ExampleModel(models.Model):
     model_pic = models.ImageField(upload_to = 'pic_folder/', default = 'pic_folder/None/no-img.jpg')
 
+
 class ImageUploadForm(forms.Form):
     """Image upload form."""
     image = forms.ImageField()
 
+
 class UploadFileForm(forms.Form):
     #title = forms.CharField(max_length=50)
     file  = forms.FileField()
+
 
 def handle_uploaded_file(f):
     with open('Classifier/images/name.jpg', 'wb+') as destination:
@@ -70,9 +69,9 @@ def handle_uploaded_file(f):
 
 
 def upload_pic(request):
-
+    print("*"*25 + "HERE" + "*"*25)
     if request.method == 'POST':
-        form = UploadFileForm(request.POST or None, request.FILES or None)
+        #form = UploadFileForm(request.POST or None, request.FILES or None)
         #if form.is_valid():
         handle_uploaded_file(request.FILES['image'])
         scores = classify("name")
@@ -83,5 +82,5 @@ def upload_pic(request):
 
         #return HttpResponse('upload.html')
     else:
-        form = UploadFileForm()
+        #form = UploadFileForm()
         return HttpResponse('upload.html')
