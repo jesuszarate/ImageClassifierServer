@@ -71,7 +71,7 @@ def handle_uploaded_file(f):
 def upload_pic(request):
 
     print("*"*25 + request.method + "*"*25)
-    if request.method == 'POST':
+    #if request.method == 'POST':
 
         #form = UploadFileForm(request.POST or None, request.FILES or None)
         #if form.is_valid():
