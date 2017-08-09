@@ -76,6 +76,7 @@ def upload_pic(request):
         #if form.is_valid():
         handle_uploaded_file(request.FILES['image'])
         scores = classify("name")
+        print(scores)
         data = json.dumps(scores)
         return HttpResponse(data)
         #return HttpResponse(data, content_type='application/json')
