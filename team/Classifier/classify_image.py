@@ -1,5 +1,5 @@
 import os
-import inception
+import .inception
 
 def classify(image_path):
 
