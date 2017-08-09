@@ -14,7 +14,6 @@ def classify(image_path):
     # Path for a jpeg-image that is included in the downloaded data.
     image_path = os.path.join('team/Classifier/images', image_path + '.jpg')
 
-    print(image_path)
     # Use the Inception model to classify the image.
     pred = model.classify(image_path=image_path)
 

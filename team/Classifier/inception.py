@@ -422,7 +422,7 @@ class Inception:
         # The index is sorted lowest-to-highest values. Take the last k.
         top_k = idx[-k:]
 
-        scores = {}
+        scores = []
         # Iterate the top-k classes in reversed order (i.e. highest first).
         for cls in reversed(top_k):
             # Lookup the class-name.
@@ -433,7 +433,7 @@ class Inception:
 
             # Print the score and class-name.
             print("{0:>6.2%} : {1}".format(score, name))
-            scores[str(score)] = name
+            scores.append((str(score), name))
         return scores
 
     def transfer_values(self, image_path=None, image=None):
