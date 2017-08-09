@@ -69,14 +69,18 @@ def handle_uploaded_file(f):
 
 
 def upload_pic(request):
-    print("*"*25 + "HERE" + "*"*25)
+
     if request.method == 'POST':
+
         #form = UploadFileForm(request.POST or None, request.FILES or None)
         #if form.is_valid():
         handle_uploaded_file(request.FILES['image'])
+        print("*"*25 + "HERE1" + "*"*25)
         scores = classify("name")
+        print("*"*25 + "HERE2" + "*"*25)
         print(scores)
         data = json.dumps(scores)
+        print("*"*25 + "HERE3" + "*"*25)
         return HttpResponse(data)
         #return HttpResponse(data, content_type='application/json')
 
