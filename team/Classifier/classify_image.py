@@ -1,6 +1,6 @@
 import os
 
-from mysite.team.Classifier import inception
+from . import inception
 
 
 def classify(image_path):
