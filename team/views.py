@@ -86,6 +86,7 @@ def upload_pic(request):
         #return HttpResponse(data, content_type='application/json')
 
         #return HttpResponse('upload.html')
-    else:
+
+    #else:
         #form = UploadFileForm()
-        return HttpResponse('upload.html')
+        #return HttpResponse('upload.html')
