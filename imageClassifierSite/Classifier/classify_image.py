@@ -1,7 +1,9 @@
 import os
-
+import sys
 from . import inception
 
+sys.path.append('..')
+import config
 
 def classify(image_path):
 
@@ -12,7 +14,7 @@ def classify(image_path):
     model = inception.Inception()
 
     # Path for a jpeg-image that is included in the downloaded data.
-    image_path = os.path.join('team/Classifier/images', image_path + '.jpg')
+    image_path = os.path.join(config.IMAGES_PATH, image_path + '.jpg')
 
     # Use the Inception model to classify the image.
     pred = model.classify(image_path=image_path)

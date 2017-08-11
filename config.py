@@ -1,0 +1,1 @@
+IMAGES_PATH = 'imageClassifierSite/Classifier/images'
