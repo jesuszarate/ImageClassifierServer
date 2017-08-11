@@ -10,6 +10,7 @@ How to run
 #### Before running the server make sure you have the following set up.
 
 * Make sure to be running in a conda environment
+    * First Install [anconda](https://docs.continuum.io/anaconda/install/)
     * conda create --name venv
     * When conda asks `proceed ([y]/n)?` pick yes
     * Now activate the environment `source activate venv`
