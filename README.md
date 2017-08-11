@@ -19,7 +19,8 @@ How to run
     * `cd ImageClassifier`
     * `pip install requirements.txt`
   
-  ######Note: If the installation of the requirements didn't work, install each of them one by one. Most of them will install  but some will fail for some reason. 
+    Note: If the installation of the requirements didn't work, install each of them one by one. Most of them will install  but some will fail for some reason.
+   
   
 
 
