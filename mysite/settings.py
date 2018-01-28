@@ -33,7 +33,7 @@ else:
     SECRET_KEY = os.environ['SECRET_KEY']
 
 
-ALLOWED_HOSTS = ['jarphys.herokuapp.com', 'images.jesuszarate.com', '127.0.0.1']
+ALLOWED_HOSTS = ['jarphys.herokuapp.com', 'image.jesuszarate.com', '127.0.0.1']
 
 # Application definition
 
