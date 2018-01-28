@@ -1,5 +1,7 @@
 # ImageClassifierServer
 
+Checkout the [Demo](http://image.jesuszarate.com/upload_picture)
+
 Requirements
 ------------
 1. Python 3
