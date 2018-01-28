@@ -1,6 +1,24 @@
-<form action="/pp" method="post" enctype="multipart/form-data">{% csrf_token %}
-    <p>
-        <input id="id_image" type="file" class="" name="image">
-    </p>
-    <input type="submit" value="Submit" />
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Angular 2 QuickStart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container-fluid">
+    <form action="/pp" method="post" enctype="multipart/form-data">{% csrf_token %}
+        <p>
+            <label class="btn btn-default">
+                Browse
+                <input id="id_image" name="image" type="file" style="display: none">
+            </label>
+        </p>
+        <input type="submit" value="Submit" />
+    </form>
+</div>
+</body>
+</html>
+
+

@@ -20,6 +20,7 @@ class UploadFileForm(forms.Form):
 
 
 def uploadPicture(request):
+    #return render(request, 'angular-2-template/index.html')
     return render(request, 'upload_picture.html')
 
 
